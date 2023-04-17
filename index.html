@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">  
+        <div class="container">
+            <nav><a href="index.html">
+                <img src="images/logo2.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#ProjectsLinks">Projects links</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+
+            <div class="header-text">
+                
+                <h1>Hello , I'm <span>Dinesh Sakpal</span><br>From Maharashtra</h1>
+                <p>Student of Mumbai University.</p>
+                <a href="images/Dinesh.pdf" download="" class="btn">Download My CV</a>
+            </div>
+
+        </div>  
+    </div>
+
+    <!-- ABOUT -->
+
+<div id="about">
+    <div class="container">
+
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/avtar.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, My name is Dinesh Sakpal. My short-term goal is to get a job / Intership in a reputed company, and my long-term goal is to achieve a good position where I can advance my career and benefit the business.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programing Skills </span><br>Python <span><b>|</b></span> Java <span><b>|</b></span> HTML <span><b>|</b></span> CSS <span><b>|</b></span> PHP </li>
+
+                        <li><span>Database Known</span><br>MySQL <span><b>|</b></span> Firebase <span><b>|</b></span> MongoDB </li>
+
+                        <li><span>Others</span><br>Data Science <span><b>|</b></span> Pandas <span><b>|</b></span> Numpy <span><b>|</b></span> MS Office <span><b>|</b></span> Typing</li>
+
+                        <li><span>Operating Systems</span><br>Windows <span><b>|</b></span> Linux</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br> I'm Fresher.</li>
+                        <!-- <li><span>2021 - 2023</span><br> Team lead at StarApp LLC</li>
+                        <li><span>2020 - 2021</span><br> UI/ UX Design Executive at coin digital ltd.</li>
+                        <li><span>2019 - 2020</span><br>Intership at ekart eCommerce</li> -->
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Present</span><br>Msc Computer Science <span><b>|</b></span> Shri Sindh Thakurnath College <span><b>|</b></span> Mumbai University <span></li>
+
+                        <li><span>2021</span><br>Bsc Computer Science <span><b>|</b></span> R.K.Talreja College <span><b>|</b></span> Mumbai University <span><b>|</b></span> CGPA : 8.1 / 10</li>
+
+                        <li><span>2018</span><br>HSC <span><b>|</b></span> R.K.Talreja College <span><b>|</b></span> Maharashtra Board <span><b>|</b></span> Percentage : 64 % </li>
+
+                        <li><span>2016</span><br>SSC <span><b>|</b></span> Guru Gobind Singh Hindi School <span><b>|</b></span> Maharashtra Board <span><b>|</b></span> Percentage : 80 %</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+            
+    </div>
+</div>
+
+<!-- Projects  -->
+
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <!-- <i class="fas fa-code"></i> -->
+                <i class="fa-solid fa-laptop-code"></i>
+                <h1>Laptop Price Predictor</h1><br>
+                <h3>Python | Jupyter | Streamlit </h3> <br>
+                
+                <p>A simple Machine learning web app deployed on Render which predict laptop prices according to laptop configuration defined by user.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            
+
+            <div>
+                <!-- <i class="fas fa-crop-alt"></i> -->
+                <i class="fa-brands fa-android"></i>
+                <h1>Quizzes Android Application</h1><br>
+                <h3>Android Studio | Google Firebase </h3><br>
+                <p>The Quiz Contest is an android application that features general questions. It has multiple-choice questions with a time limit, and it also calculates the score for each correct answer.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <!-- <i class="fab fa-app-store"></i> -->
+                <i class="fas fa-code"></i>
+                <h1>Personal Portfolio Website</h1><br>
+                <h3> HTML | CSS </h3><br>
+                <p>It is a simple personal portfolio website created with the help of HTML and CSS Here you can view my past projects, learn more about my skills and experience. Thank you for visiting!</p>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Portfolio  OR PORJECTS LIKNS-->
+
+<div id="ProjectsLinks">
+    <div class="container">
+        <h1 class="sub-title">Projects Links</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/p1.jpg" alt="">
+                <div class="layer">
+                    <h3>Laptop Price Predictor</h3>
+                    <p>A simple Machine learning web app deployed on Render which predict laptop prices according to laptop configuration defined by user.</p>
+                    <a href="https://github.com/i-am-dinesh/Laptop_Price_Prediction_Project"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/p2.jpg" alt="">
+                <div class="layer">
+                    <h3>Quizzes Android Application</h3>
+                    <p>The Quiz Contest is an android application that features general questions. It has multiple-choice questions with a time limit, and it also calculates the score for each correct answer.</p>
+                    <a href="https://github.com/i-am-dinesh/Android_Quiz_Application"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/p3.png" alt="">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>It is a simple personal portfolio website created with the help of HTML and CSS Here you can view my past projects, learn more about my skills and experience. Thank you for visiting!</p>
+                    <a href="https://github.com/i-am-dinesh"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+
+<!-- contact  -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i> contact@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9966558822</p>
+                <div class="social-icons">
+                    <a href="https://github.com/i-am-dinesh"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="images/Dinesh.pdf" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="" placeholder="Your Name" required>
+                    <input type="email" name="Email" id="" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Made with <i class="fas fa-heart"></i> By Dinesh Sakpal</p>
+    </div>
+
+</div>
+
+
+
+    
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzgaByYrtMGgMnps4gm_h2PzeRImCpFj6rL8bflJr6I-YwOaDKPPtiYtCtysQkgN910/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
